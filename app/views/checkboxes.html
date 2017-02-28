@@ -1,0 +1,218 @@
+<div>
+  <article id="content_Resources_Checkboxes" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" role="article">
+
+      <div class="jumbotron">
+        <h2 class="text-theme-color1">Checkboxes</h2>
+        <p>Checkboxes allow the user to select one or more options from a set of values.</p>
+      </div>
+
+      <h3>Usage Guidelines</h3>
+
+      <div class="row">
+
+        <div class="col-sm-6">
+
+          <h4 class="ns-icon ns-success">When to use</h4>
+
+          <ul>
+            <li>Checkboxes can be used when the user is able to select more than one option.</li>
+            <li>Checkboxes can be used when the user needs to select that they acknowledge something.</li>
+            <li>Checkboxes allow all available options to be visible to the user.</li>
+          </ul>
+
+        </div>
+
+        <div class="col-sm-6">
+
+          <h4 class="ns-icon ns-error">When not to use</h4>
+
+          <ul>
+            <li>Do not use if the user can select only one option. Use a <a href="#Resources_Radio-Buttons">radio button</a> or a toggle instead.</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="panel-group" id="accordion_checkboxes_interaction" role="tablist" aria-multiselectable="true">
+
+        <h3>Interaction</h3>
+
+        <p>Users should be able to select either the checkbox or the text to make their selection. Consider the order in which options appear. In most cases alphabetical order will work best. Keep text short and ensure the user can clearly associate the label with the input. Be careful if you set a default value &mdash; this can discourage the user from making a selection or unconsciously influence their choice. Groups of checkbox options can appear in two formats: vertically-oriented or inline.</p>
+
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="hdg_accordion_checkboxes_interaction_vertical-checkbox">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="" href="#accordion_checkboxes_interaction_vertical-checkbox" aria-expanded="false" aria-controls="accordion_checkboxes_interaction_vertical-checkbox">
+                Vertical Checkbox
+              </a>
+            </h4>
+          </div>
+          <div id="accordion_checkboxes_interaction_vertical-checkbox" class="panel-collapse collapse" role="tabpanel" aria-labelledby="hdg_accordion_checkboxes_interaction_vertical-checkbox">
+            <div class="panel-body">
+
+              <div class="row">
+
+                <div class="col-md-3">
+
+                  <form class="bs-example">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox">Option 1
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox">Option 2
+                      </label>
+                    </div>
+                    <div class="checkbox disabled">
+                      <label>
+                        <input type="checkbox" disabled="disabled">Disabled option
+                      </label>
+                    </div>
+                  </form>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="hdg_accordion_checkboxes_interaction_inline-checkbox">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="" href="#accordion_checkboxes_interaction_inline-checkbox" aria-expanded="false" aria-controls="accordion_checkboxes_interaction_inline-checkbox">
+                Inline Checkbox
+              </a>
+            </h4>
+          </div>
+          <div id="accordion_checkboxes_interaction_inline-checkbox" class="panel-collapse collapse" role="tabpanel" aria-labelledby="hdg_accordion_checkboxes_interaction_inline-checkbox">
+            <div class="panel-body">
+
+              <div class="row">
+
+                <div class="col-md-12">
+
+                  <form class="form-inline bs-example">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox">Option 1
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox">Option 2
+                      </label>
+                    </div>
+                    <div class="checkbox disabled">
+                      <label>
+                        <input type="checkbox" disabled="disabled">Disabled option
+                      </label>
+                    </div>
+                  </form>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="panel-group" id="accordion_checkboxes_validation" role="tablist" aria-multiselectable="true">
+
+        <h3>Validation</h3>
+
+        <p>Checkboxes should be validated only after the user has made a selection or submited their selection. Checkboxes should never use the Success validation state because users are always picking from pre-validated list of options. Read the <a href="#Resources_Validation-and-Errors">Validation &amp; Errors</a> section for more information about how and when to use validation.</p>
+
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="hdg_accordion_checkboxes_validation_warning">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="" href="#accordion_checkboxes_validation_warning" aria-expanded="false" aria-controls="accordion_checkboxes_validation_warning">
+                Warning
+              </a>
+            </h4>
+          </div>
+          <div id="accordion_checkboxes_validation_warning" class="panel-collapse collapse" role="tabpanel" aria-labelledby="hdg_accordion_checkboxes_validation_warning">
+            <div class="panel-body">
+
+              <div class="row">
+
+                <div class="col-md-6">
+
+                  <form class="bs-example">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox">Option 1
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox">Option 2
+                      </label>
+                    </div>
+                    <div class="checkbox disabled">
+                      <label>
+                        <input type="checkbox" disabled="disabled">Disabled option
+                      </label>
+                    </div>
+                    <span class="help-text ns-icon ns-warning">Warning message goes here.</span>
+                  </form>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="hdg_accordion_checkboxes_validation_error">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="" href="#accordion_checkboxes_validation_error" aria-expanded="false" aria-controls="accordion_checkboxes_validation_error">
+                Error
+              </a>
+            </h4>
+          </div>
+          <div id="accordion_checkboxes_validation_error" class="panel-collapse collapse" role="tabpanel" aria-labelledby="hdg_accordion_checkboxes_validation_error">
+            <div class="panel-body">
+
+              <div class="row">
+
+                <div class="col-md-6">
+
+                  <form class="bs-example">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox">Option 1
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox">Option 2
+                      </label>
+                    </div>
+                    <div class="checkbox disabled">
+                      <label>
+                        <input type="checkbox" disabled="disabled">Disabled option
+                      </label>
+                    </div>
+                    <span class="help-text ns-icon ns-error">Error message goes here.</span>
+                  </form>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </article>
+</div>

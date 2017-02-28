@@ -1,0 +1,214 @@
+<div>
+
+  <article id="content_Resources_Buttons" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" role="article">
+
+      <div class="jumbotron">
+        <h2 class="text-theme-color1">Buttons</h2>
+        <p>Buttons allow users to take actions which affect their current task.</p>
+      </div>
+
+      <h3>Usage Guidelines</h3>
+
+      <div class="row">
+
+        <div class="col-sm-6">
+
+          <h4 class="ns-icon ns-success">When to use</h4>
+
+          <ul>
+            <li>Buttons can be used to start a new task, such as signing up for a service or registering a new account.</li>
+            <li>Buttons can be used to impact a task the user is currently working on, such as clearing a form or saving a draft.</li>
+            <li>Buttons can be used to finish a task, such as submitting a form.</li>
+          </ul>
+
+        </div>
+
+        <div class="col-sm-6">
+
+          <h4 class="ns-icon ns-error">When not to use</h4>
+
+          <ul>
+            <li>Does the user need to navigate to another page? Consider using a navigation component, like a link or <a href="#Resources_Icons">Back/Next icons</a> instead (e.g. to save space).</li>
+            <li>Does an icon exist which represents the action? If so, you may wish to use the appropriate <a href="#Resources_Icons">icon</a> instead (e.g. to save space).</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="panel-group" id="accordion_buttons_interaction" role="tablist" aria-multiselectable="true">
+
+        <h3>Interaction</h3>
+
+        <p>Buttons generally fall under the categories of “primary” and “secondary”, each of which have different designs/visual weight. Which button you use depends on whether the associated action is primary or secondary:</p>
+
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="hdg_accordion_buttons_interaction_primary-actions">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="" href="#accordion_buttons_interaction_primary-actions" aria-expanded="false" aria-controls="accordion_buttons_interaction_primary-actions">
+                Primary Actions
+              </a>
+            </h4>
+          </div>
+          <div id="accordion_buttons_interaction_primary-actions" class="panel-collapse collapse" role="tabpanel" aria-labelledby="hdg_accordion_buttons_interaction_primary-actions">
+            <div class="panel-body">
+
+              <h4>Active</h4>
+
+              <div class="row">
+
+                <div class="col-md-6">
+
+                  <div class="bs-example">
+                    <button type="button" class="btn btn-primary">Primary Action</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <p>Primary actions are those in which a user is starting a new process (e.g. “Register”), progressing/adding to their current one (e.g. “Add Image”), or completing a process (e.g. “Submit”).</p>
+
+              <p>Primary buttons have static, hover, and active states, the latter two of which are darker in color.</p>
+
+              <h4>Disabled</h4>
+
+              <div class="row">
+
+                <div class="col-md-6">
+
+                  <div class="bs-example">
+                    <button type="button" class="btn btn-primary" disabled="disabled">Primary Action</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <p>For cases in which a primary action is disabled (e.g. they must complete part of a form before submitting), a disabled option should be used. Disabled buttons are also paired with a disabled mouse icon.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="hdg_accordion_buttons_interaction_secondary-actions">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="" href="#accordion_buttons_interaction_secondary-actions" aria-expanded="false" aria-controls="accordion_buttons_interaction_secondary-actions">
+                Secondary Actions
+              </a>
+            </h4>
+          </div>
+          <div id="accordion_buttons_interaction_secondary-actions" class="panel-collapse collapse" role="tabpanel" aria-labelledby="hdg_accordion_buttons_interaction_secondary-actions">
+            <div class="panel-body">
+
+              <h4>Guidelines</h4>
+
+              <div class="row">
+
+                <div class="col-md-6">
+
+                  <div class="bs-example">
+                    <button type="button" class="btn btn-default">Secondary Action</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <p>Secondary actions are those within an existing process which are less frequently used. They often take the form of removing data (e.g. “Delete”) or stopping/resetting a process (e.g. “Cancel”).</p>
+
+              <p>Like primary buttons, secondary actions also have static, hover, and active states.</p>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="panel-group" id="accordion_buttons_presentation" role="tablist" aria-multiselectable="true">
+
+        <h3>Presentation</h3>
+
+        <p>Make sure there is enough visual contrast for the button to stand out from other elements on the page and to represent the importance of the action. This is particularly true when a button causes an irreversible action—in which case, you may wish to also include a <a href="#Resources_Modals">confirmation modal</a>.</p>
+
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="hdg_accordion_buttons_presentation_labels">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="" href="#accordion_buttons_presentation_labels" aria-expanded="false" aria-controls="accordion_buttons_presentation_labels">
+                Labels
+              </a>
+            </h4>
+          </div>
+          <div id="accordion_buttons_presentation_labels" class="panel-collapse collapse" role="tabpanel" aria-labelledby="hdg_accordion_buttons_presentation_labels">
+            <div class="panel-body">
+
+              <h4>Guidelines</h4>
+
+              <div class="row">
+
+                <div class="col-md-6">
+
+                  <div class="bs-example">
+                    <button type="button" class="btn btn-primary">Add Image</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <p>Button labels should be short and actionable, and clearly explain the action that will take place when it is selected. The text on a button should be two words or less whenever possible. The button’s physical placement (and its placement within a workflow) should provide enough context for a user that lengthy descriptive text isn’t necessary.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="hdg_accordion_buttons_presentation_placement">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="" href="#accordion_buttons_presentation_placement" aria-expanded="false" aria-controls="accordion_buttons_presentation_placement">
+                Placement
+              </a>
+            </h4>
+          </div>
+          <div id="accordion_buttons_presentation_placement" class="panel-collapse collapse" role="tabpanel" aria-labelledby="hdg_accordion_buttons_presentation_placement">
+            <div class="panel-body">
+
+              <p>Button placement can vary quite a bit depending on the situation, but there are some thing to consider:</p>
+
+              <ul>
+                <li>What is the user’s workflow across a page? Primary buttons in particular should be logically placed according to where the user is going next. For example, if a user is filling out a form, placing the submit button near the last item for them to complete is sensible.</li>
+                <li>Is a button going to be used frequently during a workflow? If so, it should be persistent in the user’s field of vision (e.g. pinning it in the navigation menu).</li>
+                <li>Do you need to prevent accidental clicks? In the case of irreversible actions in particular, you may wish to space it away from other interactive elements (e.g. separating out a “Delete” and “Save” button).</li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="hdg_accordion_buttons_presentation_hierarchy-of-actions">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="" href="#accordion_buttons_presentation_hierarchy-of-actions" aria-expanded="false" aria-controls="accordion_buttons_presentation_hierarchy-of-actions">
+                Hierarchy of Actions
+              </a>
+            </h4>
+          </div>
+          <div id="accordion_buttons_presentation_hierarchy-of-actions" class="panel-collapse collapse" role="tabpanel" aria-labelledby="hdg_accordion_buttons_presentation_hierarchy-of-actions">
+            <div class="panel-body">
+
+              <p>It is possible that several primary and secondary actions will be available to a user within a given page. By considering several factors, you can establish a hierarchy between actions. This will help you determine which type of button you use and/or their placement relative to each other.</p>
+
+              <ul>
+                <li>Importance of action: Is an action very important in a workflow (e.g. complete a process, submit an important form, etc.)?</li>
+                <li>Frequency of use: Is the action used very frequently?</li>
+                <li>Potential harm: Could the action be very harmful to your user’s workflow? In this case, you may wish it to stand out less than the safe action.</li>
+                <li>Opposing functions: Are any of the buttons opposites (e.g. “Delete” and “Save”)?</li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </article>
+
+</div>

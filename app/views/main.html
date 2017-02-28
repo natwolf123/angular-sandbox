@@ -1,0 +1,24 @@
+<div class="jumbotron" ng-controller="MainCtrl">
+  <h1>Angular App in GitHub Pages</h1>
+</div>
+
+<div class="row marketing">
+  <button type="button" name="button" ng-click="vm.toggleButtons()" class="btn btn-default">Buttons</button>
+  <button type="button" name="button"ng-click="vm.toggleCheckboxes()" class="btn btn-default">Checkboxes</button>
+  <button type="button" name="button"ng-click="vm.toggleColors()" class="btn btn-default">Colors</button>
+
+  <div ng-show="vm.showButtons">
+    <div ng-include="'views/buttons.html'">
+    </div>
+  </div>
+
+  <div ng-show="vm.showCheckboxes">
+    <div ng-include="'views/checkboxes.html'">
+    </div>
+  </div>
+
+  <div ng-show="vm.showColors">
+    <div ng-include="'views/colors.html'">
+    </div>
+  </div>
+</div>
